@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sitios Turísticos en Jalpan de Serra</title>
+  <!-- Fuentes e iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/maps.css">
+  <!-- PWA y Favicon -->
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="icon" href="./img/pwa/32.png" type="image/png">
+</head>
+<body class="section-turismo">
+  <!-- Navbar fijo -->
+  <header class="navbar navbar-expand-lg navbar-fixed">
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="img/logo_jalpan.png" alt="Logo de Jalpan" class="img-fluid">
+      </a>
+    </div>
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#menuNavbar" 
+      aria-controls="menuNavbar" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menuNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" data-section="unidad"><a href="unidad.html" class="nav-link header-link"><span>Unidad familiar</span><span>y su gente</span></a></li>
+        <li class="nav-item" data-section="misiones"><a href="misiones.html" class="nav-link header-link"><span>Misiones</span><span>Franciscanas</span></a></li>
+        <li class="nav-item" data-section="huapango"><a href="huapango.html" class="nav-link header-link"><span>Huapango y</span><span>tradiciones</span></a></li>
+        <li class="nav-item" data-section="gastronomia"><a href="gastronomia.html" class="nav-link header-link"><span>Gastronomía</span><span>serrana</span></a></li>
+        <li class="nav-item" data-section="presa"><a href="presa.html" class="nav-link header-link"><span>La presa Jalpan y</span><span>cuerpos de agua</span></a></li>
+        <li class="nav-item" data-section="tancama"><a href="tancama.html" class="nav-link header-link"><span>Zona arqueológica</span><span>Tancama</span></a></li>
+        <li class="nav-item" data-section="naturaleza"><a href="naturaleza.html" class="nav-link header-link"><span>Riqueza natural</span><span>y biodiversidad</span></a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="menu-placeholder"></div>
+
+  <main class="content-margin">
+    <!-- Barra de navegación secundaria -->
+    <nav class="related-nav">
+      <div class="container">
+        <h3>Servicios turísticos relacionados</h3>
+        <div class="related-links">
+          <a href="hoteles.html" class="related-link hoteles"><i class="fas fa-hotel"></i> Hoteles</a>
+          <a href="restaurantes.html" class="related-link restaurantes"><i class="fas fa-utensils"></i> Restaurantes</a>
+          <a href="guias.html" class="related-link guias"><i class="fas fa-map"></i> Guías</a>
+          <a href="turismo.html" class="related-link turismo active"><i class="fas fa-tree"></i> Actividades</a>
+        </div>
+      </div>
+    </nav>
+    <div class="page-title">
+      <h1>Sitios Turísticos en Jalpan de Serra, Querétaro</h1>
+    </div>
+    <div id="map"></div>
+  </main>
+
+  <section class="recommendations content-margin">
+    <h2>Sitios Turísticos Recomendados</h2>
+    <div id="recommended-tourism"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top-line"></div>
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-brand">
+          <img src="img/logo_corazon.png" alt="Logo Jalpan de mi Corazón" class="footer-logo">
+          <h5>Jalpan de mi Corazón</h5>
+          <p>Descubre la Sierra Gorda</p>
+        </div>
+        <div class="footer-links-section">
+          <h5>Explora</h5>
+          <ul class="footer-links">
+            <li><a href="misiones.html" style="--link-color: #E2107A">Cultura</a></li>
+            <li><a href="gastronomia.html" style="--link-color: #F6AE33">Gastronomía</a></li>
+            <li><a href="naturaleza.html" style="--link-color: #299442">Naturaleza</a></li>
+          </ul>
+        </div>
+        <div class="footer-info-section">
+          <h5>Información</h5>
+          <ul class="footer-info">
+            <li><a href="info.html#about">Sobre Nosotros</a></li>
+            <li><a href="info.html#contact">Contáctanos</a></li>
+            <li><a href="info.html#privacy">Política de Privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-section">
+          <h5>Síguenos</h5>
+          <ul class="social-links">
+            <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Jalpan de mi Corazón. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/maps.js"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHv1vQIDnvmtpuZajhX5xVmGzSeGNOrZc&callback=initMap&libraries=places,geometry">
+  </script>
+</body>
+</html>

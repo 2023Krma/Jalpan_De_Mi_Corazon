@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misiones Franciscanas - Jalpan de mi Corazón</title>
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuentes personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/secciones.css?v=6">
+    <!-- PWA y Favicon -->
+    <link rel="manifest" href="manifest.json?v=5"/>
+    <link rel="icon" href="./img/pwa/32.png?v=5" type="image/png">
+</head>
+
+<body class="section-misiones">
+    <!-- Navbar fijo -->
+    <header class="navbar navbar-expand-lg navbar-fixed">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo_jalpan.png" alt="Logo de Jalpan" class="img-fluid">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" data-section="unidad"><a href="unidad.html" class="nav-link header-link"><span>Unidad familiar</span><span>y su gente</span></a></li>
+                <li class="nav-item" data-section="misiones"><a href="misiones.html" class="nav-link header-link"><span>Misiones</span><span>Franciscanas</span></a></li>
+                <li class="nav-item" data-section="huapango"><a href="huapango.html" class="nav-link header-link"><span>Huapango y</span><span>tradiciones</span></a></li>
+                <li class="nav-item" data-section="gastronomia"><a href="gastronomia.html" class="nav-link header-link"><span>Gastronomía</span><span>serrana</span></a></li>
+                <li class="nav-item" data-section="presa"><a href="presa.html" class="nav-link header-link"><span>La presa Jalpan y</span><span>cuerpos de agua</span></a></li>
+                <li class="nav-item" data-section="tancama"><a href="tancama.html" class="nav-link header-link"><span>Zona arqueológica</span><span>Tancama</span></a></li>
+                <li class="nav-item" data-section="naturaleza"><a href="naturaleza.html" class="nav-link header-link"><span>Riqueza natural</span><span>y biodiversidad</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu-placeholder"></div>
+<div class="section-wrapper content-margin">
+    <section class="gallery py-5">
+        <div class="container">
+            <h1 class="main-title text-center mb-4">Misiones Franciscanas</h1>
+
+            <!-- Historia General -->
+            <div class="history-section mb-5">
+                <h2 class="secondary-title text-center mb-3">Historia de las Misiones Franciscanas</h2>
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img src="img/Misiones/historia_general.webp" class="history-img img-fluid rounded mb-3" alt="Misiones Franciscanas - Historia General">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="history-text">Las Misiones Franciscanas de la Sierra Gorda, fundadas en el siglo XVIII por los frailes franciscanos liderados por Fray Junípero Serra, son un testimonio de la evangelización y el arte barroco en México. Estas cinco misiones (Santiago, Tancoyol, Landa, Tilaco y Concá) combinan elementos indígenas, mestizos y europeos en su arquitectura, reflejando la riqueza cultural de la región. Construidas para integrar a las comunidades indígenas, como los pames, a la vida colonial, las misiones destacan por sus fachadas ornamentadas y su importancia histórica. Declaradas Patrimonio Mundial por la UNESCO en 2003, son un símbolo de la identidad y el legado cultural de la Sierra Gorda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Misiones de Jalpan Section -->
+            <h2 class="secondary-title text-center mb-3">Misiones de Jalpan</h2>
+            <p class="section-description text-center mb-5">
+                Las misiones de Santiago y Tancoyol, ubicadas en el municipio de Jalpan, son el corazón cultural e histórico de la Sierra Gorda, reconocidas por su arquitectura barroca y su legado franciscano.
+            </p>
+            <div class="row gallery-grid mb-5" id="jalpan-misiones-gallery">
+                <div class="col-12 col-md-6 col-lg-6 mb-4 gallery-item" data-section="santiago">
+                    <div class="gallery-img-container">
+                        <img src="img/Misiones/santiago.webp" class="img-fluid gallery-img" alt="Misión de Santiago - Fachada">
+                    </div>
+                    <div class="gallery-caption">
+                        <h5 class="gallery-title">Misión de Santiago</h5>
+                        <p class="gallery-text">Fundada en 1744 por Fray Junípero Serra, la Misión de Santiago en Jalpan es el epicentro de las misiones franciscanas. Su fachada barroca, adornada con esculturas de santos y motivos vegetales, refleja la fusión de la cultura indígena y europea. Como centro administrativo y espiritual, esta misión es un ícono de la Sierra Gorda y un punto de referencia para visitantes.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 mb-4 gallery-item" data-section="tancoyol">
+                    <div class="gallery-img-container">
+                        <img src="img/Misiones/tancoyol.webp" class="img-fluid gallery-img" alt="Misión de Tancoyol - Fachada">
+                    </div>
+                    <div class="gallery-caption">
+                        <h5 class="gallery-title">Misión de Tancoyol</h5>
+                        <p class="gallery-text">La Misión de Tancoyol, construida en 1760, destaca por su fachada ricamente decorada con elementos simbólicos y esculturas. Ubicada en el municipio de Jalpan, esta misión es conocida por su diseño arquitectónico único y su papel en la evangelización de los pames. Su entorno rural añade un encanto especial a esta joya franciscana.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Otras Misiones Section -->
+            <h2 class="secondary-title text-center mb-3">Otras Misiones</h2>
+            <p class="section-description text-center mb-5">
+                Las misiones de Landa, Tilaco y Concá completan el conjunto franciscano de la Sierra Gorda, cada una con su propia historia y belleza arquitectónica.
+            </p>
+            <div class="row gallery-grid" id="otras-misiones-gallery">
+                <div class="col-12 col-md-6 col-lg-4 mb-4 gallery-item" data-section="landa">
+                    <div class="gallery-img-container">
+                        <img src="img/Misiones/landa.webp" class="img-fluid gallery-img" alt="Misión de Landa - Fachada">
+                    </div>
+                    <div class="gallery-caption">
+                        <h5 class="gallery-title">Misión de Landa</h5>
+                        <p class="gallery-text">Construida en 1761, la Misión de Landa es famosa por su fachada barroca con detalles florales y religiosos. Su diseño refleja la influencia indígena en la ornamentación, siendo un tesoro cultural de la región.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 gallery-item" data-section="tilaco">
+                    <div class="gallery-img-container">
+                        <img src="img/Misiones/tilaco.webp" class="img-fluid gallery-img" alt="Misión de Tilaco - Fachada">
+                    </div>
+                    <div class="gallery-caption">
+                        <h5 class="gallery-title">Misión de Tilaco</h5>
+                        <p class="gallery-text">La Misión de Tilaco, terminada en 1762, destaca por su fachada sencilla pero elegante, con elementos que narran la historia franciscana. Su entorno tranquilo la hace ideal para la reflexión.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4 gallery-item" data-section="conca">
+                    <div class="gallery-img-container">
+                        <img src="img/Misiones/conca.webp" class="img-fluid gallery-img" alt="Misión de Concá - Fachada">
+                    </div>
+                    <div class="gallery-caption">
+                        <h5 class="gallery-title">Misión de Concá</h5>
+                        <p class="gallery-text">Finalizada en 1754, la Misión de Concá combina arquitectura barroca con un entorno natural impresionante. Su fachada cuenta historias de fe y cultura de la Sierra Gorda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <img src="img/logo_corazon.png" alt="Logo Jalpan de mi Corazón" class="footer-logo">
+                    <h5>Jalpan de mi Corazón</h5>
+                    <p>Descubre la Sierra Gorda</p>
+                </div>
+                <div class="footer-links-section">
+                    <h5>Explora</h5>
+                    <ul class="footer-links">
+                        <li><a href="misiones.html" style="--link-color: #E2107A">Cultura</a></li>
+                        <li><a href="gastronomia.html" style="--link-color: #F6AE33">Gastronomía</a></li>
+                        <li><a href="naturaleza.html" style="--link-color: #299442">Naturaleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-section">
+                    <h5>Información</h5>
+                    <ul class="footer-info">
+                        <li><a href="info.html#about">Sobre Nosotros</a></li>
+                        <li><a href="info.html#contact">Contáctanos</a></li>
+                        <li><a href="info.html#privacy">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h5>Síguenos</h5>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Jalpan de mi Corazón. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js"></script>
+    <script src="js/script.js?v=5"></script>
+</body>
+</html>

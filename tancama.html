@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora la Zona Arqueológica de Tancama en Jalpan de Serra, Querétaro. Descubre su historia huasteca, estructuras únicas y eventos culturales en la Sierra Gorda.">
+    <meta name="keywords" content="Zona Arqueológica Tancama, Jalpan de Serra, Sierra Gorda, cultura huasteca, arqueología Querétaro, turismo cultural">
+    <title>Zona Arqueológica Tancama - Jalpan de mi Corazón</title>
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fuentes personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Pannellum para fotos 360 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" integrity="sha256-0i3gYpZSZtYp9g3t5i+3q3Qz+F3i+3g3t5i+3q3Qz+F3i+3g3t5i+3q3Qz+F3i+3g" crossorigin="anonymous">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/secciones.css?v=8">
+    <!-- PWA y Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="./img/pwa/32.png" type="image/png">
+</head>
+<body class="section-tancama">
+    <!-- Navbar fijo -->
+    <header class="navbar navbar-expand-lg navbar-fixed">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo_jalpan.png" alt="Logo de Jalpan" class="img-fluid">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" data-section="unidad"><a href="unidad.html" class="nav-link header-link"><span>Unidad familiar</span><span>y su gente</span></a></li>
+                <li class="nav-item" data-section="misiones"><a href="misiones.html" class="nav-link header-link"><span>Misiones</span><span>Franciscanas</span></a></li>
+                <li class="nav-item" data-section="huapango"><a href="huapango.html" class="nav-link header-link"><span>Huapango y</span><span>tradiciones</span></a></li>
+                <li class="nav-item" data-section="gastronomia"><a href="gastronomia.html" class="nav-link header-link"><span>Gastronomía</span><span>serrana</span></a></li>
+                <li class="nav-item" data-section="presa"><a href="presa.html" class="nav-link header-link"><span>La presa Jalpan y</span><span>cuerpos de agua</span></a></li>
+                <li class="nav-item" data-section="tancama"><a href="tancama.html" class="nav-link header-link"><span>Zona arqueológica</span><span>Tancama</span></a></li>
+                <li class="nav-item" data-section="naturaleza"><a href="naturaleza.html" class="nav-link header-link"><span>Riqueza natural</span><span>y biodiversidad</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu-placeholder"></div>
+
+<div class="section-wrapper content-margin">
+    <section class="tancama-section">
+        <div class="container">
+            <h2 class="main-title mb-4 text-center">Zona Arqueológica Tancama</h2>
+            <p class="section-description text-center mb-5">
+                Explora Tancama, un asentamiento huasteco en la Sierra Gorda de Querétaro, con su rica historia, estructuras únicas y vistas panorámicas.
+            </p>
+            <div class="row justify-content-center">
+                <!-- Historia -->
+                <div class="col-12 col-md-4 mb-4">
+                    <a href="#historia" class="nav-link">
+                        <div class="card tancama-card">
+                            <img src="img/tancama/historia.webp" class="card-img-top" alt="Historia de Tancama" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Historia</h5>
+                                <p class="card-text">Un legado huasteco milenario.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Estructuras -->
+                <div class="col-12 col-md-4 mb-4">
+                    <a href="#estructuras" class="nav-link">
+                        <div class="card tancama-card">
+                            <img src="img/tancama/estructuras.webp" class="card-img-top" alt="Estructuras Principales" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Estructuras</h5>
+                                <p class="card-text">Plazas y pirámides únicas.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Galería -->
+                <div class="col-12 col-md-4 mb-4">
+                    <a href="#galeria" class="nav-link">
+                        <div class="card tancama-card">
+                            <img src="img/tancama/galeria_1.webp" class="card-img-top" alt="Galería de Tancama" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Galería</h5>
+                                <p class="card-text">Imágenes de la zona arqueológica.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tancama-detail-sections">
+        <div class="container">
+            <!-- Historia -->
+            <div id="historia" class="tancama-section-block mb-5">
+                <h2 class="section-title">Historia de Tancama</h2>
+                <div class="tancama-content-block row align-items-center">
+                    <div class="col-md-7">
+                        <img src="img/tancama/historia_detail.webp" alt="Historia de Tancama" class="tancama-detail-img img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="tancama-detail-text">
+                            Tancama, “Cerro de Fuego” en huasteco, es un sitio prehispánico en la Sierra Gorda, ocupado entre 200 y 900 d.C. Durante el periodo Clásico (500-750 d.C.), los huastecos construyeron este centro ceremonial alineado con el solsticio de invierno. Excavaciones han revelado obsidiana y conchas que muestran amplias redes comerciales. Su diseño refleja una conexión única con la naturaleza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Estructuras -->
+            <div id="estructuras" class="tancama-section-block mb-5">
+                <h2 class="section-title">Estructuras Principales</h2>
+                <div class="tancama-content-block row align-items-center">
+                    <div class="col-md-7">
+                        <img src="img/tancama/estructuras_detail.webp" alt="Estructuras Principales" class="tancama-detail-img img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="tancama-detail-text">
+                            Tancama cuenta con tres plazas en desnivel (El Mirador, Santiago y La Promesa) y 62 estructuras, muchas de base circular, únicas en Mesoamérica. El Edificio de las Mariposas de Cobre, de 7.5 m, destaca por su altura, mientras que la Plaza Santiago incluye un juego de pelota de 18 m, centro ceremonial del sitio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <!-- Galería -->
+                <div id="galeria" class="tancama-section-block mb-5">
+                    <h2 class="section-title">Galería de Tancama</h2>
+                    <div class="tancama-content-block">
+                        <p class="tancama-detail-text text-center mb-4">
+                            Disfruta de diferentes perspectivas de la zona arqueológica de Tancama con estos datos curiosos.
+                        </p>
+                        <div class="gallery-grid row">
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_0.webp" class="gallery-img card-img-top" alt="Vista de Tancama 1" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">Tancama significa “Cerro de Fuego” en huasteco, posiblemente por rituales con fogatas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_2.webp" class="gallery-img card-img-top" alt="Vista de Tancama 2" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">Las estructuras circulares de Tancama son únicas en Mesoamérica, inspiradas en la geografía local.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_3.webp" class="gallery-img card-img-top" alt="Vista de Tancama 3" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">Se encontraron conchas marinas en Tancama, prueba de comercio con la costa a 300 km.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_4.webp" class="gallery-img card-img-top" alt="Vista de Tancama 4" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">El sitio de Tancama fue habitado por la cultura huasteca durante el periodo Clásico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_5.webp" class="gallery-img card-img-top" alt="Vista de Tancama 5" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">Las plazas de Tancama están alineadas con el solsticio de invierno.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_6.webp" class="gallery-img card-img-top" alt="Vista de Tancama 6" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">El Edificio de las Mariposas de Cobre es la estructura más alta del sitio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_7.webp" class="gallery-img card-img-top" alt="Vista de Tancama 7" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">La Plaza Santiago es el corazón ceremonial de Tancama.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_8.webp" class="gallery-img card-img-top" alt="Vista de Tancama 8" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">El juego de pelota de Tancama es uno de los más pequeños de Mesoamérica.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mb-4">
+                                <div class="tancama-card">
+                                    <img src="img/tancama/galeria_9.webp" class="gallery-img card-img-top" alt="Fauna de Tancama" loading="lazy">
+                                    <div class="gallery-caption card-body">
+                                        <p class="card-text">La fauna de la Sierra Gorda incluye ardillas, como esta que habita cerca del sitio arqueológico.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- Fotos 360 -->
+            <div id="fotos_360" class="tancama-section-block mb-5">
+                <h2 class="section-title">Fotos 360 de Tancama</h2>
+                <div class="tancama-content-block">
+                    <p class="tancama-detail-text text-center mb-4">
+                        Descubre Tancama desde todos los ángulos con esta vista panorámica interactiva.
+                    </p>
+                    <div id="panorama" class="panorama-container" style="width: 100%; height: 500px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Incluir Pannellum para la foto 360 (agrega esto en el <head> o al final del <body>) -->
+<script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
+<link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css">
+<script>
+    // Usa la ruta correcta para la imagen 360. Limpia la caché del navegador (Ctrl+Shift+R o Cmd+Shift+R) si el error persiste.
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "img/tancama/tancama_360.jpg",
+        "autoLoad": true,
+        "autoRotate": -2
+    });
+</script>
+
+    <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <img src="img/logo_corazon.png" alt="Logo Jalpan de mi Corazón" class="footer-logo">
+                    <h5>Jalpan de mi Corazón</h5>
+                    <p>Descubre la Sierra Gorda</p>
+                </div>
+                <div class="footer-links-section">
+                    <h5>Explora</h5>
+                    <ul class="footer-links">
+                        <li><a href="misiones.html" style="--link-color: #E2107A">Cultura</a></li>
+                        <li><a href="gastronomia.html" style="--link-color: #F6AE33">Gastronomía</a></li>
+                        <li><a href="naturaleza.html" style="--link-color: #299442">Naturaleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-section">
+                    <h5>Información</h5>
+                    <ul class="footer-info">
+                        <li><a href="info.html#about">Sobre Nosotros</a></li>
+                        <li><a href="info.html#contact">Contáctanos</a></li>
+                        <li><a href="info.html#privacy">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h5>Síguenos</h5>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Jalpan de mi Corazón. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js" integrity="sha256-0i3gYpZSZtYp9g3t5i+3q3Qz+F3i+3g3t5i+3q3Qz+F3i+3g3t5i+3q3Qz+F3i+3g" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

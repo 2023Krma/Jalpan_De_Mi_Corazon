@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastronomía Serrana - Jalpan de mi Corazón</title>
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Fuentes personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/secciones.css?v=9">
+    <!-- PWA y Favicon -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="./img/pwa/32.png" type="image/png">
+</head>
+<body class="section-gastronomia">
+    <!-- Navbar fijo -->
+    <header class="navbar navbar-expand-lg navbar-fixed">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo_jalpan.png" alt="Logo de Jalpan" class="img-fluid">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" data-section="unidad"><a href="unidad.html" class="nav-link header-link"><span>Unidad familiar</span><span>y su gente</span></a></li>
+                <li class="nav-item" data-section="misiones"><a href="misiones.html" class="nav-link header-link"><span>Misiones</span><span>Franciscanas</span></a></li>
+                <li class="nav-item" data-section="huapango"><a href="huapango.html" class="nav-link header-link"><span>Huapango y</span><span>tradiciones</span></a></li>
+                <li class="nav-item" data-section="gastronomia"><a href="gastronomia.html" class="nav-link header-link"><span>Gastronomía</span><span>serrana</span></a></li>
+                <li class="nav-item" data-section="presa"><a href="presa.html" class="nav-link header-link"><span>La presa Jalpan y</span><span>cuerpos de agua</span></a></li>
+                <li class="nav-item" data-section="tancama"><a href="tancama.html" class="nav-link header-link"><span>Zona arqueológica</span><span>Tancama</span></a></li>
+                <li class="nav-item" data-section="naturaleza"><a href="naturaleza.html" class="nav-link header-link"><span>Riqueza natural y</span><span>biodiversidad</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu-placeholder"></div>
+
+    <div class="section-wrapper content-margin">
+        <section class="gallery-section">
+            <div class="container">
+                <h1 class="main-title">Gastronomía Serrana</h1>
+                <p class="section-description text-center">
+                    La gastronomía de Jalpan de Serra es un reflejo de la tradición huasteca y serrana, donde el maíz, los chiles y la guayaba se combinan en platillos y bebidas únicos. Disfruta de sabores que cuentan la historia de la Sierra Gorda.
+                </p>
+            </div>
+                <!-- Sección de historia general -->
+                <div class="history-section row align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/gastronomia/gastronomia_general.webp" alt="Gastronomía Serrana" class="history-img img-fluid" loading="lazy">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="history-text">
+                            La cocina de Jalpan de Serra fusiona herencias indígenas pames con influencias coloniales, destacando por su uso de ingredientes locales como maíz, chiles, y guayaba. Platillos como el zacahuil, las enchiladas serranas, y las acamayas, junto con bebidas como el atole de teja, reflejan la riqueza de la Sierra Gorda. Guisados con flor de izote, revoltillo con salsa de coyol, y dulces de guayaba complementan esta experiencia culinaria única.
+                        </p>
+                    </div>
+                </div>
+            <!-- Separador -->
+            <hr class="section-divider">
+            <!-- Galería de platillos y bebidas -->
+            <div class="container">
+                <div class="gallery-grid" id="gastronomia-gallery">
+                    <!-- Enchiladas Serranas -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/enchiladas.webp" alt="Enchiladas Serranas" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Enchiladas Serranas</h3>
+                            <p class="gallery-text">
+                                Tortillas de maíz rellenas de queso fresco o carne deshebrada, bañadas en salsa de chile guajillo o serrano, acompañadas de cecina, crema, cebolla y papas fritas. Un platillo emblemático de la Sierra Gorda, lleno de sabor picante y tradición.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Cecina de Res -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/cecina.webp" alt="Cecina de Res" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Cecina de Res</h3>
+                            <p class="gallery-text">
+                                Carne seca de res marinada con jugo de naranja agria y sal, asada a la perfección y servida con salsa de molcajete, tortillas recién hechas y cebolla. Es un clásico serrano, ideal para taquizas en celebraciones.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Zacahuil -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/zacahuil.webp" alt="Tamales de Zacahuil" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Zacahuil</h3>
+                            <p class="gallery-text">
+                                Tamal gigante huasteco de masa de maíz martajada, relleno de carne de puerco o pollo y chiles, envuelto en hojas de plátano y cocido en horno de leña toda la noche. Perfecto para fiestas y eventos comunitarios en Jalpan.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Bocoles -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/bocoles.webp" alt="Bocoles" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Bocoles</h3>
+                            <p class="gallery-text">
+                                Pequeñas gorditas de maíz rellenas de frijol, queso fresco, o guisados como chicharrón. Son un antojito huasteco típico, ideales como acompañamiento o botana en los mercados de Jalpan.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Acamayas -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/acamayas.webp" alt="Acamayas" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Acamayas</h3>
+                            <p class="gallery-text">
+                                Langostinos de río preparados en salsa, al mojo de ajo, o asados. Su sabor único depende de los ríos de la Sierra Gorda, siendo más comunes en temporada de lluvias. Un manjar local muy apreciado.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Gorditas de Horno -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/gorditas_horno.webp" alt="Gorditas de Horno" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Gorditas de Horno</h3>
+                            <p class="gallery-text">
+                                Gorditas de masa de maíz con levadura, horneadas con leña, con un sabor dulce y textura suave. Pueden servirse solas o rellenas de frijoles, perfectas para acompañar comida cualquier serrana.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Atole de Maíz de Teja -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/atole_teja.webp" alt="Atole de Maíz de Teja" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Atole de Maíz de Teja</h3>
+                            <p class="gallery-text">
+                                Bebida espesa de maíz y semillas de girasol (“teja”), endulzada con piloncillo y canela. Reconfortante y tradicional, es ideal para las mañanas frías de la Sierra Gorda.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Atole de Guayabilla -->
+                    <div class="gallery-item">
+                        <div class="gallery-img-container">
+                            <img src="img/gastronomia/atole_guayabilla.webp" alt="Atole de Guayabilla" class="gallery-img" loading="lazy">
+                        </div>
+                        <div class="gallery-caption">
+                            <h3 class="gallery-title">Atole de Guayabilla</h3>
+                            <p class="gallery-text">
+                                Bebida cremosa hecha con guayaba silvestre, endulzada con piloncillo. Su sabor frutal captura la esencia de los ingredientes locales de Jalpan, siendo un favorito en mercados y fiestas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <img src="img/logo_corazon.png" alt="Logo Jalpan de mi Corazón" class="footer-logo">
+                    <h5>Jalpan de mi Corazón</h5>
+                    <p>Descubre la Sierra Gorda</p>
+                </div>
+                <div class="footer-links-section">
+                    <h5>Explora</h5>
+                    <ul class="footer-links">
+                        <li><a href="misiones.html" style="--link-color: #E2107A">Cultura</a></li>
+                        <li><a href="gastronomia.html" style="--link-color: #F6AE33">Gastronomía</a></li>
+                        <li><a href="naturaleza.html" style="--link-color: #299442">Naturaleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-section">
+                    <h5>Información</h5>
+                    <ul class="footer-info">
+                        <li><a href="info.html#about">Sobre Nosotros</a></li>
+                        <li><a href="info.html#contact">Contáctanos</a></li>
+                        <li><a href="info.html#privacy">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h5>Síguenos</h5>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Jalpan de mi Corazón. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información - Jalpan de mi Corazón</title>
+    <!-- Fuentes e iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fuentes personalizadas -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/secciones.css?v=6">
+    <link rel="stylesheet" href="css/info.css">
+    <!-- PWA y Favicon -->
+    <link rel="manifest" href="manifest.json?v=5"/>
+    <link rel="icon" href="./img/pwa/32.png?v=5" type="image/png">
+</head>
+<body class="section-info">
+    <!-- Navbar fijo -->
+    <header class="navbar navbar-expand-lg navbar-fixed">
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="img/logo_jalpan.png" alt="Logo de Jalpan" class="img-fluid">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar" aria-controls="menuNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" data-section="unidad"><a href="unidad.html" class="nav-link header-link"><span>Unidad familiar</span><span>y su gente</span></a></li>
+                <li class="nav-item" data-section="misiones"><a href="misiones.html" class="nav-link header-link"><span>Misiones</span><span>Franciscanas</span></a></li>
+                <li class="nav-item" data-section="huapango"><a href="huapango.html" class="nav-link header-link"><span>Huapango y</span><span>tradiciones</span></a></li>
+                <li class="nav-item" data-section="gastronomia"><a href="gastronomia.html" class="nav-link header-link"><span>Gastronomía</span><span>serrana</span></a></li>
+                <li class="nav-item" data-section="presa"><a href="presa.html" class="nav-link header-link"><span>La presa Jalpan y</span><span>cuerpos de agua</span></a></li>
+                <li class="nav-item" data-section="tancama"><a href="tancama.html" class="nav-link header-link"><span>Zona arqueológica</span><span>Tancama</span></a></li>
+                <li class="nav-item" data-section="naturaleza"><a href="naturaleza.html" class="nav-link header-link"><span>Riqueza natural</span><span>y biodiversidad</span></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="menu-placeholder"></div>
+
+    <div class="section-wrapper content-margin">
+        <section class="info-section py-5">
+            <div class="container">
+                <!-- Sobre Nosotros -->
+                <div id="about" class="info-about mb-5">
+                    <h2 class="info-section-title text-center mb-3">Sobre Nosotros</h2>
+                    <p class="info-section-text text-center mb-4">
+                        Jalpan de mi Corazón es un proyecto dedicado a compartir la magia de Jalpan de Serra, Querétaro, un Pueblo Mágico que enamora con su riqueza cultural, natural y humana. Nuestra misión es promover el orgullo por las tradiciones, la gastronomía, las misiones franciscanas y la biodiversidad de la Sierra Gorda, invitando a locales y visitantes a descubrir y preservar este tesoro mexicano. A través de este sitio, celebramos la unidad familiar, el legado de nuestra gente y las festividades que nos unen, con el compromiso de inspirar amor y respeto por nuestra comunidad.
+                    </p>
+                </div>
+
+                <!-- Contáctanos -->
+                <div id="contact" class="info-contact mb-5">
+                    <h2 class="info-section-title text-center mb-3">Contáctanos</h2>
+                    <p class="info-section-text text-center mb-4">
+                        Estamos aquí para resolver tus dudas, recibir tus comentarios o ayudarte a planear tu visita a Jalpan de Serra. ¡Ponte en contacto con nosotros!
+                    </p>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <form class="info-contact-form" action="mailto:contacto@jalpandemicorazon.com" method="post" enctype="text/plain">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label info-form-label">Nombre</label>
+                                    <input type="text" class="form-control info-form-input" id="name" name="name" placeholder="Tu nombre" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label info-form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control info-form-input" id="email" name="email" placeholder="tu@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label info-form-label">Mensaje</label>
+                                    <textarea class="form-control info-form-input" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                                </div>
+                                <button type="submit" class="btn info-form-button w-100">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="info-contact-details text-center mt-4">
+                        <p class="info-contact-item"><strong>Correo:</strong> contacto@jalpandemicorazon.com</p>
+                        <p class="info-contact-item"><strong>Teléfono:</strong> +52 (441) 123-4567</p>
+                        <p class="info-contact-item"><strong>Dirección:</strong> Plaza Principal, Centro, Jalpan de Serra, Querétaro, C.P. 76340</p>
+                        <p class="info-contact-item"><strong>Síguenos en redes sociales:</strong></p>
+                        <ul class="social-links d-flex justify-content-center">
+                            <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Políticas de Privacidad -->
+                <div id="privacy" class="info-privacy mb-5">
+                    <h2 class="info-section-title text-center mb-3">Políticas de Privacidad</h2>
+                    <p class="info-section-text text-center mb-4">
+                        En Jalpan de mi Corazón, nos comprometemos a proteger tu privacidad y a tratar tus datos personales con responsabilidad, en cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.
+                    </p>
+                    <div class="info-privacy-content">
+                        <h5 class="info-privacy-subtitle">1. Responsable del tratamiento de datos</h5>
+                        <p class="info-privacy-text">Jalpan de mi Corazón, con domicilio en Plaza Principal, Centro, Jalpan de Serra, Querétaro, C.P. 76340, es el responsable del tratamiento de los datos personales que nos proporciones a través de este sitio web.</p>
+
+                        <h5 class="info-privacy-subtitle">2. Datos recopilados</h5>
+                        <p class="info-privacy-text">Recopilamos datos personales que tú nos proporcionas voluntariamente, como nombre, correo electrónico y mensajes enviados a través del formulario de contacto. También podemos recopilar datos anónimos, como tu dirección IP o información de navegación, mediante cookies para mejorar la experiencia en nuestro sitio. No recopilamos datos sensibles, como información sobre raza, religión o salud.</p>
+
+                        <h5 class="info-privacy-subtitle">3. Finalidad de los datos</h5>
+                        <p class="info-privacy-text">Utilizamos tus datos para:
+                            <ul class="info-privacy-list">
+                                <li>Responder a tus consultas o solicitudes enviadas a través del formulario de contacto.</li>
+                                <li>Enviarte información sobre eventos, promociones o novedades de Jalpan de mi Corazón, siempre con tu consentimiento expreso.</li>
+                                <li>Mejorar el contenido y diseño del sitio mediante análisis estadísticos de navegación.</li>
+                            </ul>
+                        </p>
+
+                        <h5 class="info-privacy-subtitle">4. Derechos ARCO</h5>
+                        <p class="info-privacy-text">Tienes derecho a ejercer los derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO) respecto a tus datos personales. Para hacerlo, envía una solicitud a <a href="mailto:contacto@jalpandemicorazon.com">contacto@jalpandemicorazon.com</a>, incluyendo tu nombre, correo asociado y una copia de tu identificación oficial. Procesaremos tu solicitud en un plazo razonable.</p>
+
+                        <h5 class="info-privacy-subtitle">5. Consentimiento y revocación</h5>
+                        <p class="info-privacy-text">Al usar este sitio o enviar tus datos, consientes su tratamiento conforme a esta política. Puedes revocar tu consentimiento en cualquier momento enviando un correo a <a href="mailto:contacto@jalpandemicorazon.com">contacto@jalpandemicorazon.com</a>. Esto puede limitar tu acceso a ciertos servicios, como notificaciones por correo.</p>
+
+                        <h5 class="info-privacy-subtitle">6. Uso de cookies</h5>
+                        <p class="info-privacy-text">Utilizamos cookies para mejorar la experiencia del usuario y recopilar datos anónimos de navegación. Puedes gestionar las cookies desde la configuración de tu navegador.</p>
+
+                        <h5 class="info-privacy-subtitle">7. Modificaciones a esta política</h5>
+                        <p class="info-privacy-text">Nos reservamos el derecho de modificar esta política de privacidad, publicando los cambios en este sitio. Te recomendamos revisarla periódicamente. Los cambios no afectarán los datos recopilados previamente sin tu consentimiento.</p>
+
+                        <h5 class="info-privacy-subtitle">8. Contacto</h5>
+                        <p class="info-privacy-text">Para cualquier duda sobre esta política, contáctanos en <a href="mailto:contacto@jalpandemicorazon.com">contacto@jalpandemicorazon.com</a> o al +52 (441) 123-4567.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-top-line"></div>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-brand">
+                    <img src="img/logo_corazon.png" alt="Logo Jalpan de mi Corazón" class="footer-logo">
+                    <h5>Jalpan de mi Corazón</h5>
+                    <p>Descubre la Sierra Gorda</p>
+                </div>
+                <div class="footer-links-section">
+                    <h5>Explora</h5>
+                    <ul class="footer-links">
+                        <li><a href="misiones.html" style="--link-color: #E2107A">Cultura</a></li>
+                        <li><a href="gastronomia.html" style="--link-color: #F6AE33">Gastronomía</a></li>
+                        <li><a href="naturaleza.html" style="--link-color: #299442">Naturaleza</a></li>
+                    </ul>
+                </div>
+                <div class="footer-info-section">
+                    <h5>Información</h5>
+                    <ul class="footer-info">
+                        <li><a href="info.html#about">Sobre Nosotros</a></li>
+                        <li><a href="info.html#contact">Contáctanos</a></li>
+                        <li><a href="info.html#privacy">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-section">
+                    <h5>Síguenos</h5>
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/profile.php?id=61555317347262" target="_blank" rel="noopener noreferrer" style="--social-color: #7D3A8E"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/jalpan_de_mi_corazon/" target="_blank" rel="noopener noreferrer" style="--social-color: #E2107A"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@jalpandemicorazon" target="_blank" rel="noopener noreferrer" style="--social-color: #DE0737"><i class="fab fa-tiktok"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Jalpan de mi Corazón. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js?v=5"></script>
+</body>
+</html>
