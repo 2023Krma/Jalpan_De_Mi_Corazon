@@ -1,0 +1,436 @@
+/* === MÓDULO: ESTILOS GENERALES === */
+:root {
+  --primary-font: Arial, sans-serif; /* Fuente predeterminada, alineada con global.css */
+  --text-color: #333;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: #f7f7f7;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* === MÓDULO: TÍTULO DE PÁGINA === */
+.page-title {
+  background-color: #006064; /* Color por defecto para hoteles */
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 5px solid #00838f; /* Borde inferior claro */
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  animation: fade-in 0.5s ease-in forwards;
+  margin-bottom: 1.5rem; /* Aumentar separación con el mapa */
+}
+
+.page-title h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem; /* Menor separación en móvil */
+  }
+  .page-title h1 {
+    font-size: 1.75rem;
+  }
+}
+
+/* === MÓDULO: BARRA DE NAVEGACIÓN SECUNDARIA === */
+.related-nav {
+  background-color: #f8f9fa; /* Fondo gris claro */
+  padding: 1.5rem 1rem;
+  margin: 0.5rem 0 1.5rem; /* Margen superior reducido, inferior aumentado */
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  animation: fade-in 0.5s ease-in forwards;
+}
+
+.related-nav h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.related-nav .related-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.related-nav .related-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px 8px 0 0; /* Bordes redondeados solo arriba */
+  border: 2px solid transparent;
+  border-bottom: 3px solid;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.related-nav .related-link i {
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.related-nav .related-link.hoteles {
+  border-bottom-color: #006064;
+}
+
+.related-nav .related-link.hoteles:hover {
+  background-color: #006064;
+  color: white;
+}
+
+.related-nav .related-link.hoteles:hover i {
+  color: white;
+}
+
+.related-nav .related-link.restaurantes {
+  border-bottom-color: #004d40;
+}
+
+.related-nav .related-link.restaurantes:hover {
+  background-color: #004d40;
+  color: white;
+}
+
+.related-nav .related-link.restaurantes:hover i {
+  color: white;
+}
+
+.related-nav .related-link.guias {
+  border-bottom-color: #4a148c;
+}
+
+.related-nav .related-link.guias:hover {
+  background-color: #4a148c;
+  color: white;
+}
+
+.related-nav .related-link.guias:hover i {
+  color: white;
+}
+
+.related-nav .related-link.turismo {
+  border-bottom-color: #880e4f;
+}
+
+.related-nav .related-link.turismo:hover {
+  background-color: #880e4f;
+  color: white;
+}
+
+.related-nav .related-link.turismo:hover i {
+  color: white;
+}
+
+.related-nav .related-link.active {
+  background-color: #006064; /* Color de la sección activa (Hoteles) */
+  color: white;
+  border-bottom-width: 5px;
+}
+
+.related-nav .related-link.active i {
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .related-nav {
+    margin: 0.5rem 0 1rem; /* Menor separación en móvil */
+  }
+  .related-nav .related-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .related-nav .related-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* === MÓDULO: MAPA === */
+main {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  width: 80%;
+  max-width: 1200px;
+  height: 500px;
+  border: 2px solid #333;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  background-color: #eee;
+}
+
+@media (max-width: 767px) {
+  #map {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* === MÓDULO: RECOMENDACIONES === */
+.recommendations {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recommendations h2 {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#recommended-hotels,
+#recommended-restaurants,
+#recommended-tourism,
+#recommended-guides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.place-card {
+  width: 280px;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.place-card:hover {
+  transform: scale(1.03);
+}
+
+.place-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.place-card h3 {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  color: #006064; /* Color por defecto para hoteles */
+  font-size: 1.25rem;
+}
+
+.place-card p {
+  padding: 0 1rem 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.place-card a {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #006064; /* Color por defecto para hoteles */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.place-card a.contact-whatsapp,
+.place-card a.contact-call {
+  width: calc(50% - 1rem); /* Divide el ancho para dos botones */
+}
+
+.place-card a.contact-whatsapp {
+  margin-right: 0.25rem;
+}
+
+.place-card a.contact-call {
+  margin-left: 0.25rem;
+}
+
+.place-card a:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 767px) {
+  .place-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .place-card a.contact-whatsapp,
+  .place-card a.contact-call {
+    width: 100%; /* Botones apilados en móviles */
+    margin: 0.5rem 1rem;
+  }
+}
+
+/* === MÓDULO: PIE DE PÁGINA === */
+footer {
+  background-color: #e0e0e0;
+  color: #444;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+
+/* === MÓDULO: ESTILOS ESPECÍFICOS POR PÁGINA === */
+body.section-hoteles .page-title {
+  background-color: #006064;
+  border-bottom-color: #00838f;
+}
+
+body.section-hoteles .place-card h3 {
+  color: #006064;
+}
+
+body.section-hoteles .place-card a {
+  background-color: #006064;
+}
+
+body.section-hoteles .place-card a:hover {
+  background-color: #004d40;
+}
+
+body.section-hoteles .related-nav .related-link.active {
+  background-color: #006064;
+  border-bottom-color: #006064;
+  border-bottom-width: 5px;
+  color: white;
+}
+
+body.section-hoteles .related-nav .related-link.active i {
+  color: white;
+}
+
+body.section-restaurantes .page-title {
+  background-color: #004d40;
+  border-bottom-color: #00695c;
+}
+
+body.section-restaurantes .recommendations h2 {
+  color: #004d40;
+}
+
+body.section-restaurantes .place-card h3 {
+  color: #004d40;
+}
+
+body.section-restaurantes .place-card a {
+  background-color: #004d40;
+}
+
+body.section-restaurantes .place-card a:hover {
+  background-color: #00332b;
+}
+
+body.section-restaurantes .related-nav .related-link.active {
+  background-color: #004d40;
+  border-bottom-color: #004d40;
+  border-bottom-width: 5px;
+  color: white;
+}
+
+body.section-restaurantes .related-nav .related-link.active i {
+  color: white;
+}
+
+body.section-turismo .page-title {
+  background-color: #880e4f;
+  border-bottom-color: #ad1457;
+}
+
+body.section-turismo .recommendations h2 {
+  color: #880e4f;
+}
+
+body.section-turismo .place-card h3 {
+  color: #880e4f;
+}
+
+body.section-turismo .place-card a {
+  background-color: #880e4f;
+}
+
+body.section-turismo .place-card a:hover {
+  background-color: #6a0c3d;
+}
+
+body.section-turismo .related-nav .related-link.active {
+  background-color: #880e4f;
+  border-bottom-color: #880e4f;
+  border-bottom-width: 5px;
+  color: white;
+}
+
+body.section-turismo .related-nav .related-link.active i {
+  color: white;
+}
+
+body.section-guias .page-title {
+  background-color: #4a148c;
+  border-bottom-color: #6a1b9a;
+}
+
+body.section-guias .recommendations h2 {
+  color: #4a148c;
+}
+
+body.section-guias .place-card h3 {
+  color: #4a148c;
+}
+
+body.section-guias .place-card a {
+  background-color: #4a148c;
+}
+
+body.section-guias .place-card a:hover {
+  background-color: #350b67;
+}
+
+body.section-guias .related-nav .related-link.active {
+  background-color: #4a148c;
+  border-bottom-color: #4a148c;
+  border-bottom-width: 5px;
+  color: white;
+}
+
+body.section-guias .related-nav .related-link.active i {
+  color: white;
+}

@@ -1,0 +1,1783 @@
+/* Estilos generales para todas las secciones */
+.section-unidad, .section-misiones, .section-huapango, .section-gastronomia, .section-presa, .section-tancama, .section-naturaleza {
+  background-color: #fefaf5; /* Fondo claro y cálido para un toque turístico */
+  min-height: 100vh; /* Asegura que la página ocupe toda la altura */
+}
+
+/* Contenedor principal de cada sección */
+.section-unidad .gallery-section,
+.section-misiones .gallery-section,
+.section-huapango .gallery-section,
+.section-gastronomia .gallery-section,
+.section-presa .gallery-section,
+.section-tancama .gallery-section,
+.section-naturaleza .gallery-section {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px; /* Bordes redondeados para modernidad */
+}
+
+
+/* INICIO: Unidad Familiar */
+.section-unidad .gallery-section {
+  background: linear-gradient(135deg, rgba(220, 180, 230, 0.4), rgba(255, 255, 255, 0.1)); /* Gradiente morado suave */
+}
+
+.section-unidad .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(125, 58, 142, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-unidad .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(125, 58, 142, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-unidad .secondary-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(125, 58, 142, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  animation: slideIn 1s ease-out;
+}
+
+.section-unidad .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-unidad .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.section-unidad .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 380px; /* Ligeramente más grande */
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-unidad .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(125, 58, 142, 0.2);
+}
+
+.section-unidad .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 16px; /* Marco blanco */
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-unidad .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-unidad .gallery-item:hover .gallery-img {
+  transform: scale(1.05); /* Zoom suave */
+}
+
+.section-unidad .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  min-height: 100px; /* Espacio mínimo para texto */
+  max-height: 150px; /* Límite para evitar crecimiento excesivo */
+  overflow-y: auto; /* Desplazamiento para texto largo */
+  transition: background 0.3s ease;
+}
+
+.section-unidad .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-unidad .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(125, 58, 142, 0.5);
+  border-radius: 3px;
+}
+
+.section-unidad .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-unidad .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-unidad .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+/* FIN: Unidad Familiar */
+
+/* INICIO: Misiones Franciscanas */
+.section-misiones .gallery-section {
+  background: linear-gradient(135deg, rgba(238, 91, 164, 0.683), rgba(255, 255, 255, 0.1)); /* Magenta para Misiones */
+}
+
+.section-misiones .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(226, 16, 122, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-misiones .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(226, 16, 122, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-misiones .secondary-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: rgba(226, 16, 122, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  animation: slideIn 1s ease-out;
+}
+
+.section-misiones .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-misiones .history-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-misiones .history-img {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-misiones .history-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.section-misiones .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.section-misiones .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-misiones #jalpan-misiones-gallery .gallery-item {
+  max-width: 400px; /* Más grandes para Santiago y Tancoyol */
+  box-shadow: 0 4px 12px rgba(226, 16, 122, 0.25);
+}
+
+.section-misiones #jalpan-misiones-gallery .gallery-item:hover {
+  box-shadow: 0 8px 18px rgba(226, 16, 122, 0.35);
+}
+
+.section-misiones #other-misiones-gallery .gallery-item {
+  max-width: 360px; /* Estándar para Landa, Tilaco, Concá */
+}
+
+.section-misiones #other-misiones-gallery .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(226, 16, 122, 0.2);
+}
+
+.section-misiones .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-misiones .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-misiones .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.section-misiones .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  min-height: 150px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.section-misiones .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-misiones .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(226, 16, 122, 0.5);
+  border-radius: 3px;
+}
+
+.section-misiones .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-misiones .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-misiones .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsividad para Misiones */
+@media (max-width: 768px) {
+  .section-misiones .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-misiones .secondary-title {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    padding: 0.4rem;
+  }
+
+  .section-misiones .section-description,
+  .section-misiones .history-text {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .section-misiones .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .section-misiones .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-misiones .gallery-img-container {
+    padding: 12px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .section-misiones .gallery-caption {
+    min-height: 120px;
+    max-height: 150px;
+    padding: 1rem;
+  }
+
+  .section-misiones .history-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-misiones .main-title {
+    font-size: 2rem;
+  }
+
+  .section-misiones .secondary-title {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding: 0.3rem;
+  }
+
+  .section-misiones .gallery-caption {
+    min-height: 100px;
+    max-height: 120px;
+    padding: 0.8rem;
+  }
+
+  .section-misiones .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-misiones .gallery-text {
+    font-size: 0.85rem;
+  }
+
+  .section-misiones .gallery-img-container {
+    padding: 10px;
+  }
+
+  .section-misiones .history-section {
+    padding: 1rem;
+  }
+}
+/* FIN: Misiones Franciscanas */
+
+/* INICIO: Huapango */
+.section-huapango .gallery-section {
+  background: linear-gradient(135deg, rgba(234, 150, 168, 0.375), rgba(255, 255, 255, 0.1)); /* Fondo degradado solo para la galería */
+  border-radius: 15px; /* Bordes redondeados para la galería */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Sombra para el recuadro */
+  padding: 2rem; /* Padding interno para la galería */
+}
+
+.section-huapango .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(222, 7, 55, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-huapango .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(222, 7, 55, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-huapango .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-huapango .history-section {
+  padding: 2rem; /* Padding para alinear con el diseño */
+  margin-bottom: 4rem; /* Separación con la galería */
+}
+
+.section-huapango .history-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid rgba(222, 7, 55, 0.4);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.section-huapango .history-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(222, 7, 55, 0.3);
+  border-color: rgba(222, 7, 55, 0.7);
+}
+
+.section-huapango .history-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 1.8;
+  padding: 1.8rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.section-huapango .history-text:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+.section-huapango .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+  padding: 4rem 2rem 0; /* Padding-top para separación */
+  justify-content: center;
+}
+
+.section-huapango .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-huapango .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(222, 7, 55, 0.2);
+}
+
+.section-huapango .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-huapango .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-huapango .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.section-huapango .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  min-height: 150px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.section-huapango .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-huapango .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(222, 7, 55, 0.5);
+  border-radius: 3px;
+}
+
+.section-huapango .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-huapango .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-huapango .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsividad para Huapango */
+@media (max-width: 768px) {
+  .section-huapango .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-huapango .section-description,
+  .section-huapango .history-text {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .section-huapango .history-section {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-huapango .history-img {
+    max-width: 90%;
+    max-height: 250px;
+    padding: 6px;
+  }
+
+  .section-huapango .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem 0;
+  }
+
+  .section-huapango .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-huapango .gallery-img-container {
+    padding: 12px;
+  }
+
+  .section-huapango .gallery-caption {
+    min-height: 120px;
+    max-height: 150px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-huapango .main-title {
+    font-size: 2rem;
+  }
+
+  .section-huapango .history-section {
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section-huapango .history-img {
+    max-width: 100%;
+    max-height: 200px;
+    padding: 5px;
+  }
+
+  .section-huapango .history-text {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .section-huapango .gallery-grid {
+    padding: 2rem 1rem 0;
+  }
+
+  .section-huapango .gallery-caption {
+    min-height: 100px;
+    max-height: 120px;
+    padding: 0.8rem;
+  }
+
+  .section-huapango .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-huapango .gallery-text {
+    font-size: 0.85rem;
+  }
+}
+/* FIN: Huapango */
+
+
+/* INICIO: Gastronomía */
+.section-gastronomia .gallery-section {
+  background: linear-gradient(135deg, rgba(246, 174, 51, 0.2), rgba(255, 255, 255, 0.95)); /* Amarillo sutil para la galería */
+  border-radius: 15px; /* Bordes redondeados para la galería */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Sombra para el recuadro */
+  padding: 2rem; /* Padding interno para la galería */
+}
+
+.section-gastronomia .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(246, 174, 51, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-gastronomia .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(246, 174, 51, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-gastronomia .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-gastronomia .history-section {
+  padding: 2rem; /* Padding para alinear con Huapango */
+  margin-bottom: 4rem; /* Separación con la galería */
+}
+
+.section-gastronomia .history-img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  max-height: 350px;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+  border: 3px solid rgba(246, 174, 51, 0.4); /* Borde amarillo */
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.section-gastronomia .history-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(246, 174, 51, 0.3);
+  border-color: rgba(246, 174, 51, 0.7);
+}
+
+.section-gastronomia .history-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #2b2b2b;
+  line-height: 1.8;
+  padding: 1.8rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.section-gastronomia .history-text:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+}
+
+.section-gastronomia .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem 0; /* Mantiene padding-top para separación */
+  justify-content: center;
+}
+
+.section-gastronomia .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-gastronomia .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(246, 174, 51, 0.3);
+}
+
+.section-gastronomia .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-gastronomia .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-gastronomia .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.section-gastronomia .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.section-gastronomia .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-gastronomia .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(246, 174, 51, 0.5);
+  border-radius: 3px;
+}
+
+.section-gastronomia .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-gastronomia .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-gastronomia .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .section-gastronomia .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-gastronomia .section-description,
+  .section-gastronomia .history-text {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .section-gastronomia .history-section {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-gastronomia .history-img {
+    max-width: 90%;
+    max-height: 250px;
+    padding: 6px;
+  }
+
+  .section-gastronomia .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem 1.5rem 0;
+  }
+
+  .section-gastronomia .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-gastronomia .gallery-img-container {
+    padding: 0.4rem;
+  }
+
+  .section-gastronomia .gallery-caption {
+    min-height: 180px;
+    max-height: 180px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-gastronomia .main-title {
+    font-size: 2rem;
+  }
+
+  .section-gastronomia .history-section {
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .section-gastronomia .history-img {
+    max-width: 100%;
+    max-height: 200px;
+    padding: 5px;
+  }
+
+  .section-gastronomia .history-text {
+    font-size: 0.95rem;
+    padding: 1rem;
+  }
+
+  .section-gastronomia .gallery-grid {
+    padding: 2rem 1rem 0;
+  }
+
+  .section-gastronomia .gallery-caption {
+    min-height: 150px;
+    max-height: 150px;
+    padding: 0.8rem;
+  }
+
+  .section-gastronomia .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-gastronomia .gallery-text {
+    font-size: 0.85rem;
+  }
+}
+/* FIN: Gastronomía */
+
+/* INICIO: Presa */
+.section-presa .presa-section {
+  background: linear-gradient(135deg, rgba(41, 148, 194, 0.2), rgba(255, 255, 255, 0.95)); /* Azul sutil */
+}
+
+.section-presa .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(41, 148, 194, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-presa .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(41, 148, 194, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-presa .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-presa .presa-content-block {
+  background: rgba(255, 255, 255, 0.9); /* Fondo más sólido para mejor legibilidad */
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-presa .presa-detail-img {
+  width: 100%;
+  height: 400px; /* Altura fija para mantener proporción 4:3 en pantallas medianas */
+  object-fit: cover; /* Recorta si es necesario, sin distorsión */
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  z-index: 0; /* Imagen detrás del texto */
+}
+
+.section-presa .presa-detail-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  z-index: 1; /* Texto por encima de cualquier elemento */
+  background: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente para contraste */
+  padding: 1rem; /* Espaciado interno para mejor presentación */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.section-presa .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.section-presa .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-presa .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(41, 148, 194, 0.3);
+}
+
+.section-presa .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-presa .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-presa .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.section-presa .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  min-height: 150px;
+  max-height: 150px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.section-presa .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-presa .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(41, 148, 194, 0.5);
+  border-radius: 3px;
+}
+
+.section-presa .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-presa .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-presa .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .section-presa .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-presa .section-description,
+  .section-presa .presa-detail-text {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .section-presa .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .section-presa .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-presa .gallery-img-container {
+    padding: 0.4rem;
+  }
+
+  .section-presa .gallery-caption {
+    min-height: 130px;
+    max-height: 130px;
+    padding: 1rem;
+  }
+
+  .section-presa .presa-content-block {
+    padding: 1rem;
+  }
+
+  .section-presa .presa-detail-img {
+    height: 300px; /* Ajuste para pantallas medianas */
+  }
+}
+
+@media (max-width: 576px) {
+  .section-presa .main-title {
+    font-size: 2rem;
+  }
+
+  .section-presa .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-presa .gallery-caption {
+    min-height: 100px;
+    max-height: 100px;
+    padding: 0.8rem;
+  }
+
+  .section-presa .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-presa .gallery-text {
+    font-size: 0.85rem;
+  }
+
+  .section-presa .gallery-img-container {
+    padding: 8px;
+  }
+
+  .section-presa .presa-content-block {
+    padding: 1rem;
+  }
+
+  .section-presa .presa-detail-img {
+    height: 200px; /* Ajuste para pantallas pequeñas */
+  }
+}
+/* FIN: Presa */
+
+/* INICIO: Tancama */
+.tancama-section {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(255, 255, 255, 0.9));
+    padding: 2rem 0;
+}
+
+.main-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+color: rgba(139, 69, 19, 1);
+text-align: center;
+margin-bottom: 2rem;
+animation: fadeInDown 0.8s ease-out;
+}
+
+.section-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+}
+
+.tancama-content-block {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.tancama-detail-img {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: none;
+    max-height: 300px;
+    object-fit: cover;
+    height: auto;
+}
+
+.tancama-detail-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.tancama-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tancama-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top,
+.gallery-img {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 250px;
+}
+
+.card-body,
+.gallery-caption {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.panorama-container {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+/* Ocultar mensaje de error de Pannellum */
+.pnlm-error {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .section-description,
+    .tancama-detail-text {
+        font-size: 1.1rem;
+        padding: 0 0.5rem;
+    }
+
+    .tancama-content-block {
+        padding: 0.5rem;
+    }
+
+    .card-img-top,
+    .gallery-img {
+        height: 220px;
+    }
+
+    .tancama-detail-img {
+        max-height: 250px;
+    }
+
+    .panorama-container {
+        height: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .section-description,
+    .tancama-detail-text {
+        font-size: 1rem;
+    }
+
+    .card-img-top,
+    .gallery-img {
+        height: 180px;
+    }
+
+    .tancama-detail-img {
+        max-height: 200px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .panorama-container {
+        height: 300px;
+    }
+}
+/* FIN: Tancama */
+
+/* INICIO: Naturaleza */
+.section-naturaleza .naturaleza-section {
+  background: linear-gradient(135deg, rgba(34, 139, 34, 0.2), rgba(255, 255, 255, 0.95)); /* Verde esmeralda sutil */
+}
+
+.section-naturaleza .main-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: rgba(34, 139, 34, 1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  animation: fadeInDown 1s ease-out;
+}
+
+.section-naturaleza .main-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgba(34, 139, 34, 0.7);
+  margin: 0.5rem auto 0;
+  border-radius: 1px;
+}
+
+.section-naturaleza .section-description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  padding: 0 1rem;
+}
+
+.section-naturaleza .naturaleza-content-block {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-naturaleza .naturaleza-detail-img {
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+.section-naturaleza .naturaleza-detail-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.section-naturaleza .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  justify-content: center;
+}
+
+.section-naturaleza .gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 360px;
+  margin: 0 auto;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-naturaleza .gallery-item:hover {
+  box-shadow: 0 6px 14px rgba(34, 139, 34, 0.3);
+}
+
+.section-naturaleza .gallery-img-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+.section-naturaleza .gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.section-naturaleza .gallery-item:hover .gallery-img {
+  transform: scale(1.05);
+}
+
+.section-naturaleza .gallery-caption {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.2rem;
+  color: #333;
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  min-height: 150px;
+  max-height: 150px;
+  overflow-y: auto;
+  transition: background 0.3s ease;
+}
+
+.section-naturaleza .gallery-caption::-webkit-scrollbar {
+  width: 6px;
+}
+
+.section-naturaleza .gallery-caption::-webkit-scrollbar-thumb {
+  background: rgba(34, 139, 34, 0.5);
+  border-radius: 3px;
+}
+
+.section-naturaleza .gallery-item:hover .gallery-caption {
+  background: rgba(255, 255, 255, 1);
+}
+
+.section-naturaleza .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-naturaleza .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .section-naturaleza .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-naturaleza .section-description,
+  .section-naturaleza .naturaleza-detail-text {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+
+  .section-naturaleza .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .section-naturaleza .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-naturaleza .gallery-img-container {
+    padding: 0.4rem;
+  }
+
+  .section-naturaleza .gallery-caption {
+    min-height: 130px;
+    max-height: 130px;
+    padding: 1rem;
+  }
+
+  .section-naturaleza .naturaleza-content-block {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-naturaleza .main-title {
+    font-size: 2rem;
+  }
+
+  .section-naturaleza .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-naturaleza .gallery-caption {
+    min-height: 100px;
+    max-height: 100px;
+    padding: 0.8rem;
+  }
+
+  .section-naturaleza .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-naturaleza .gallery-text {
+    font-size: 0.85rem;
+  }
+
+  .section-naturaleza .gallery-img-container {
+    padding: 8px;
+  }
+
+  .section-naturaleza .naturaleza-content-block {
+    padding: 1rem;
+  }
+}
+/* FIN: Naturaleza */
+
+/* INICIO: Estilos compartidos para la galería */
+.section-unidad .gallery-grid,
+.section-misiones .gallery-grid,
+.section-huapango .gallery-grid,
+.section-gastronomia .gallery-grid,
+.section-presa .gallery-grid,
+.section-tancama .gallery-grid,
+.section-naturaleza .gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.section-unidad .gallery-title,
+.section-misiones .gallery-title,
+.section-huapango .gallery-title,
+.section-gastronomia .gallery-title,
+.section-presa .gallery-title,
+.section-tancama .gallery-title,
+.section-naturaleza .gallery-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-unidad .gallery-text,
+.section-misiones .gallery-text,
+.section-huapango .gallery-text,
+.section-gastronomia .gallery-text,
+.section-presa .gallery-text,
+.section-tancama .gallery-text,
+.section-naturaleza .gallery-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+/* FIN: Estilos compartidos para la galería */
+
+/* INICIO: Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* FIN: Animaciones */
+
+/* INICIO: Responsividad */
+@media (max-width: 768px) {
+  .section-unidad .main-title,
+  .section-misiones .main-title {
+    font-size: 2.5rem;
+  }
+
+  .section-unidad .secondary-title,
+  .section-misiones .secondary-title {
+    font-size: 1.6rem;
+    letter-spacing: 1.5px;
+    padding: 0.4rem;
+  }
+
+  .section-unidad .section-description,
+  .section-misiones .section-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .section-unidad .gallery-grid,
+  .section-misiones .gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .section-unidad .gallery-item,
+  .section-misiones .gallery-item {
+    max-width: 100%;
+  }
+
+  .section-unidad .gallery-img-container,
+  .section-misiones .gallery-img-container {
+    padding: 12px;
+    aspect-ratio: 4 / 3;
+  }
+
+  .section-unidad .gallery-caption,
+  .section-misiones .gallery-caption {
+    padding: 1rem;
+  }
+
+  .section-misiones .history-section {
+    padding: 1.5rem;
+  }
+
+  .section-misiones .history-text {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .section-misiones .main-title,
+  .section-huapango .main-title,
+  .section-gastronomia .main-title,
+  .section-presa .main-title,
+  .section-tancama .main-title,
+  .section-naturaleza .main-title {
+    font-size: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+  }
+
+  .section-misiones .secondary-title,
+  .section-huapango .secondary-title,
+  .section-gastronomia .secondary-title,
+  .section-presa .secondary-title,
+  .section-tancama .secondary-title,
+  .section-naturaleza .section-description,
+  .section-naturaleza .section-description {
+    font-size: 1.8rem;
+  }
+
+  .section-misiones .section-description,
+  .section-huapango .section-description,
+  .section-gastronomia .section-description,
+  .section-presa .section-description,
+  .section-tancama .section-description,
+  .section-naturaleza .section-description {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+  }
+
+  .section-misiones .gallery-img,
+  .section-huapango .gallery-img,
+  .section-gastronomia .gallery-img,
+  .section-presa .gallery-img,
+  .section-tancama .gallery-img,
+  .section-naturaleza .gallery-img {
+    height: height200px;
+  }
+
+  .section-misiones .gallery-item,
+  .section-huapango .gallery-item,
+  .section-gastronomia .gallery-item,
+  .section-presa .gallery-item,
+  .section-tancama .gallery-item,
+  .section-naturaleza .gallery-item {
+  max-width: 100%;
+}
+}
+
+@media (max-width: 576px) {
+  .section-unidad .main-title,
+  .section-misiones .main-title {
+    font-size: 2rem;
+  }
+
+  .section-unidad .secondary-title,
+  .section-misiones .secondary-title {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    padding: 0.3rem;
+  }
+
+  .section-unidad .gallery-title,
+  .section-misiones .gallery-title {
+    font-size: 1.1rem;
+  }
+
+  .section-unidad .gallery-text,
+  .section-misiones .gallery-text {
+    font-size: 0.85rem;
+  }
+
+  .section-unidad .gallery-img-container,
+  .section-misiones .gallery-img-container {
+    padding: 10px;
+  }
+
+  .section-unidad .gallery-caption,
+  .section-misiones .gallery-caption {
+    min-height: 100px;
+    max-height: 150px;
+  }
+
+  .section-misiones .main-title,
+  .section-huapango .main-title,
+  .section-gastronomia .main-title,
+  .section-presa .main-title,
+  .section-tancama .main-title,
+  .section-naturaleza .main-title {
+    font-size: 'Montserrat', sans-serif;
+    font-size: 2rem;
+  }
+
+  .section-misiones .gallery-section,
+  .section-huapango .gallery-section,
+  .section-gastronomia .gallery-section,
+  .section-presa .gallery-section,
+  .section-tancama .gallery-section,
+ .section .section-naturaleza .gallery-section {
+    transform: 2rem 0;
+  }
+
+  .section-misiones .gallery-caption,
+  .section-huapango .gallery-caption,
+  .section-gastronomia .gallery-caption,
+  .section-presa .gallery-caption,
+  .section-tancama .gallery-caption,
+  .section-naturaleza .gallery-caption {
+    transform: translateY(0); /* Mostrar siempre en móviles */
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro para legibilidad */
+  }
+}
+
+
+
+

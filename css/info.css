@@ -1,0 +1,173 @@
+/* Estilos para info.html */
+
+.info-section {
+    background-color: #fff;
+    padding: 50px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-section-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #E2107A;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-section-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-about {
+    background-color: #FFF3E0; /* Tono suave inspirado en #F6AE33 */
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.info-about:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-contact {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info-contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-form-label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #E2107A;
+    font-size: 1rem;
+}
+
+.info-form-input {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.info-form-input:focus {
+    border-color: #E2107A;
+    outline: none;
+    box-shadow: 0 0 5px rgba(226, 16, 122, 0.3);
+}
+
+.info-form-button {
+    background-color: #E2107A;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.info-form-button:hover {
+    background-color: #DE0737;
+    transform: translateY(-2px);
+}
+
+.info-contact-details {
+    margin-top: 30px;
+}
+
+.info-contact-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-contact-item strong {
+    color: #E2107A;
+}
+
+.info-privacy {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.info-privacy-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-privacy-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #299442;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info-privacy-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.info-privacy-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.info-privacy-list li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .info-section-title {
+        font-size: 2rem;
+    }
+
+    .info-section-text {
+        font-size: 1rem;
+    }
+
+    .info-about, .info-contact, .info-privacy {
+        padding: 20px;
+    }
+
+    .info-contact-form {
+        padding: 15px;
+    }
+
+    .info-form-button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .info-privacy-subtitle {
+        font-size: 1.3rem;
+    }
+}

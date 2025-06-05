@@ -1,0 +1,291 @@
+/* global.css */
+
+/* Variables CSS */
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos globales para <html> y <body> */
+html {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior-y: none;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    margin: 0;
+    width: 100%;
+    transition: all 0.3s ease; /* Suavizar el cambio de posición */
+}
+
+.header-logo img {
+    max-height: 50px;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.2;
+    padding-left: 5px;
+}
+
+.navbar-nav .nav-link span {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #000;
+    width: 25px;
+    height: 2px;
+    display: block;
+    position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    background-color: #000;
+    width: 25px;
+    height: 2px;
+    display: block;
+    position: absolute;
+}
+
+.navbar-toggler-icon::before {
+    top: -7px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: -7px;
+}
+
+/* Navbar fijo */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar no fijo (inicial en index.html) */
+.navbar-static {
+    position: static;
+}
+
+/* Reservar espacio cuando el navbar es fijo */
+.menu-placeholder {
+    height: 80px; /* Ajusta según la altura del navbar */
+    display: none; /* Oculta por defecto */
+}
+
+
+.navbar-fixed + .menu-placeholder {
+    display: block; /* Muestra cuando el navbar es fijo */
+}
+
+/* Margen superior para el contenido debajo del navbar fijo */
+.content-margin {
+    margin-top: 80px; /* Igual a la altura del navbar */
+}
+
+.navbar-nav .nav-link:hover span:not(.hover-active) {
+    color: #FF5733;
+}
+
+.navbar-nav .nav-item:nth-child(1) .nav-link span.hover-active { color: #7D3A8E; }
+.navbar-nav .nav-item:nth-child(2) .nav-link span.hover-active { color: #E2107A; }
+.navbar-nav .nav-item:nth-child(3) .nav-link span.hover-active { color: #DE0737; }
+.navbar-nav .nav-item:nth-child(4) .nav-link span.hover-active { color: #F6AE33; }
+.navbar-nav .nav-item:nth-child(5) .nav-link span.hover-active { color: #2DA8E0; }
+.navbar-nav .nav-item:nth-child(6) .nav-link span.hover-active { color: #B78238; }
+.navbar-nav .nav-item:nth-child(7) .nav-link span.hover-active { color: #299442; }
+
+/* Estilos para el pie de página */
+.site-footer {
+    background: linear-gradient(135deg, #050505, #232624);
+    color: #fff;
+    padding: 0 0 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.site-footer .container {
+    max-width: 1200px;
+    position: relative;
+}
+
+.footer-top-line {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #7D3A8E, #E2107A, #DE0737, #F6AE33, #2DA8E0, #B78238, #299442);
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.footer-brand {
+    text-align: center;
+    max-width: 250px;
+}
+
+.footer-logo {
+    width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0,0.5));
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-brand h5 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #DE0737;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.footer-links-section, .footer-info-section, .footer-social-section {
+    text-align: center;
+    min-width: 200px;
+}
+
+.footer-links-section h5, .footer-info-section h5, .footer-social-section h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #DE0737;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.footer-links, .footer-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li, .footer-info li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #F6AE33;
+}
+
+.footer-info a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #F6AE33;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-links li {
+    margin: 0;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: var(--social-color);
+    color: #fff;
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .footer-brand, .footer-links-section, .footer-info-section, .footer-social-section {
+        max-width: 100%;
+    }
+}
